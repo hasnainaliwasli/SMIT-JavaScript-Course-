@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="inputs">
+        <label for="genre">GENRE</label>
+        <select id="genre">
+            <!-- <option value="All">All</option> -->
+            <option value="Action">Action</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Animation">Animation</option>
+            <option value="Family">Family</option>
+            <option value="Drama">Drama</option>
+            <option value="Crime">Crime</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Horror">Horror</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Western">Western</option>
+            <option value="Romance">Romance</option>
+            <option value="Music">Music</option>
+            <option value="War">War</option>
+        </select>
+
+        <label for="year">YEAR</label>
+        <select id="year">
+            <!-- <option value="All">All</option> -->
+            <option value="1902">1902</option>
+            <option value="1920">1920</option>
+            <option value="1921">1921</option>
+            <option value="1922">1922</option>
+            <option value="1923">1923</option>
+            <option value="1924">1924</option>
+            <option value="1925">1925</option>
+            <option value="1926">1926</option>
+            <option value="1927">1927</option>
+            <option value="1928">1928</option>
+            <option value="1929">1929</option>
+            <option value="1933">1933</option>
+            <option value="1934">1934</option>
+            <option value="1935">1935</option>
+            <option value="1935">1936</option>
+            <option value="1937">1937</option>
+            <option value="1938">1938</option>
+            <option value="1939">1939</option>
+            <option value="1940">1940</option>
+            <option value="1941">1941</option>
+            <option value="1942">1942</option>
+            <option value="1961">1961</option>
+            <option value="1962">1962</option>
+            <option value="1963">1963</option>
+            <option value="1964">1964</option>
+            <option value="2020">1965</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+
+        </select>
+        <label for="language">LANGUAGE</label>
+        <select id="language">
+            <!-- <option value="All">All</option> -->
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Korean">Korean</option>
+            <option value="Italian">Italian</option>
+            <option value="Dutch">Dutch</option>
+            <option value="Portuguese">Portuguese</option>
+            <option value="Swedish">Swedish</option>
+            <option value="German">German</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Cantonese">Cantonese</option>
+            <option value="Norwegian">Norwegian</option>
+            <option value="Russian">Russian</option>
+            <option value="Danish">Danish</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Romanian">Romanian</option>
+            <option value="Bengali">Bengali</option>
+            <option value="Greek">Greek</option>
+            <option value="Bosnian">Bosnian</option>
+        </select>
+    </div>
+    <label for="rating">RATING</label>
+    <select id="rating">
+        <!-- <option value="All">All</option> -->
+        <option value="7">7</option>
+        <option value="7.1">7.1</option>
+        <option value="7.2">7.2</option>
+        <option value="7.3">7.3</option>
+        <option value="7.4">7.4</option>
+        <option value="7.5">7.5</option>
+        <option value="7.6">7.6</option>
+        <option value="7.7">7.7</option>
+        <option value="7.8">7.8</option>
+        <option value="7.9">7.9</option>
+        <option value="8">8</option>
+        <option value="8.1">8.1</option>
+        <option value="8.2">8.2</option>
+        <option value="8.3">8.3</option>
+        <option value="8.4">8.4</option>
+        <option value="8.5">8.5</option>
+        <option value="8.6">8.6</option>
+        <option value="8.7">8.7</option>
+        <option value="8.8">8.8</option>
+        <option value="8.9">8.9</option>
+        <option value="9">9+</option>
+    </select>
+    <button id="btn">RECOMMEND MOVIE</button>
+
+
+    <table border="2" >
+        <thead class="thead-dark">
+          <tr style="height: 40px ;background-color:rgb(237, 255, 248)">
+            <th scope="col">RANK</th>
+            <th scope="col">MOVIES</th>
+            <th scope="col">YEAR</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+                                                     
+        </tbody>
+      </table>
+
+      
+    <div id="movies-container"></div>
+
+</body>
+
+</html>

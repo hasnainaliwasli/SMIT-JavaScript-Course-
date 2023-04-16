@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#rating {
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+#genre {
+    width: 50%;
+    background-color: #f3f3f3;
+    margin: 1px 25px 20px 3px;
+}
+
+#language {
+    width: 50%;
+    background-color: #f3f3f3;
+    margin: 1px 25px 20px 3px;
+}
+
+#year {
+    width: 50%;
+    background-color: #f3f3f3;
+    margin: 1px 25px 20px 3px;
+}
+
+#btn {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid f3f3f3;
+    height: 7vh;
+    background-color: rgb(204, 204, 204);
+}
+
+select {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #020202;
+    /* width: 100%; */
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+/* Style the option elements */
+option {
+    display: block;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    /* border-collapse:collapse; */
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+
+
+}
+
+#movies-container {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+}
